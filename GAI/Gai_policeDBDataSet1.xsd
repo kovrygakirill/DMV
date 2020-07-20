@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Gai_policeDBDataSet1" targetNamespace="http://tempuri.org/Gai_policeDBDataSet1.xsd" xmlns:mstns="http://tempuri.org/Gai_policeDBDataSet1.xsd" xmlns="http://tempuri.org/Gai_policeDBDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Gai_policeDB" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Gai_policeDB (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GAI.Properties.Settings.GlobalReference.Default.Gai_policeDB" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="List_automobilesTableAdapter" GeneratorDataComponentClassName="List_automobilesTableAdapter" Name="List_automobiles" UserDataComponentName="List_automobilesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Gai_policeDB (Settings)" DbObjectName="Gai_policeDB.dbo.List_automobiles" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Owner_Surname, DateAdded, Town, NumberAuto, Name_mark, Employee_Surname FROM dbo.List_automobiles</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Owner_Surname" DataSetColumn="Owner_Surname" />
+              <Mapping SourceColumn="DateAdded" DataSetColumn="DateAdded" />
+              <Mapping SourceColumn="Town" DataSetColumn="Town" />
+              <Mapping SourceColumn="NumberAuto" DataSetColumn="NumberAuto" />
+              <Mapping SourceColumn="Name_mark" DataSetColumn="Name_mark" />
+              <Mapping SourceColumn="Employee_Surname" DataSetColumn="Employee_Surname" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Gai_policeDBDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Gai_policeDBDataSet1" msprop:Generator_UserDSName="Gai_policeDBDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="List_automobiles" msprop:Generator_TableClassName="List_automobilesDataTable" msprop:Generator_TableVarName="tableList_automobiles" msprop:Generator_RowChangedName="List_automobilesRowChanged" msprop:Generator_TablePropName="List_automobiles" msprop:Generator_RowDeletingName="List_automobilesRowDeleting" msprop:Generator_RowChangingName="List_automobilesRowChanging" msprop:Generator_RowEvHandlerName="List_automobilesRowChangeEventHandler" msprop:Generator_RowDeletedName="List_automobilesRowDeleted" msprop:Generator_RowClassName="List_automobilesRow" msprop:Generator_UserTableName="List_automobiles" msprop:Generator_RowEvArgName="List_automobilesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Owner_Surname" msprop:Generator_ColumnVarNameInTable="columnOwner_Surname" msprop:Generator_ColumnPropNameInRow="Owner_Surname" msprop:Generator_ColumnPropNameInTable="Owner_SurnameColumn" msprop:Generator_UserColumnName="Owner_Surname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateAdded" msprop:Generator_ColumnVarNameInTable="columnDateAdded" msprop:Generator_ColumnPropNameInRow="DateAdded" msprop:Generator_ColumnPropNameInTable="DateAddedColumn" msprop:Generator_UserColumnName="DateAdded" type="xs:dateTime" />
+              <xs:element name="Town" msprop:Generator_ColumnVarNameInTable="columnTown" msprop:Generator_ColumnPropNameInRow="Town" msprop:Generator_ColumnPropNameInTable="TownColumn" msprop:Generator_UserColumnName="Town">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumberAuto" msprop:Generator_ColumnVarNameInTable="columnNumberAuto" msprop:Generator_ColumnPropNameInRow="NumberAuto" msprop:Generator_ColumnPropNameInTable="NumberAutoColumn" msprop:Generator_UserColumnName="NumberAuto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name_mark" msprop:Generator_ColumnVarNameInTable="columnName_mark" msprop:Generator_ColumnPropNameInRow="Name_mark" msprop:Generator_ColumnPropNameInTable="Name_markColumn" msprop:Generator_UserColumnName="Name_mark">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_Surname" msprop:Generator_ColumnVarNameInTable="columnEmployee_Surname" msprop:Generator_ColumnPropNameInRow="Employee_Surname" msprop:Generator_ColumnPropNameInTable="Employee_SurnameColumn" msprop:Generator_UserColumnName="Employee_Surname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:List_automobiles" />
+      <xs:field xpath="mstns:NumberAuto" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
